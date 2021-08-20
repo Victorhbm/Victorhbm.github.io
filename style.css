@@ -1,0 +1,40 @@
+body {
+	background-color: #F3DFBF;
+}
+
+.nome {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tam-p {
+	font-size: 20px;
+}
+
+.tam-m {
+	font-size: 25px;
+}
+
+.tam-g {
+	font-size: 30px;
+}
+
+.nome {
+	text-align: center;
+}
+
+.image-container {
+	height: 400px;
+}
+
+#foto {
+	float: left;
+	height: 380px;
+	padding: 10px;
+	background-color: #2D82B7;
+	margin-right: 15px;
+}
+
