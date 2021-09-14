@@ -34,6 +34,9 @@ function resetGame() {
   answerText.innerText = 'Escolha uma cor!';
   score.innerText = 0;
   error.innerText = 0;
+  counter = 0;
+  counterError = 0;
+
 }
 
 resetGameButton.addEventListener('click', resetGame);
