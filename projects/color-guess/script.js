@@ -32,6 +32,8 @@ function resetGame() {
   addBallsColor();
   sortColor();
   answerText.innerText = 'Escolha uma cor!';
+  score.innerText = 0;
+  error.innerText = 0;
 }
 
 resetGameButton.addEventListener('click', resetGame);
