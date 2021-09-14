@@ -36,14 +36,25 @@ function resetGame() {
 
 resetGameButton.addEventListener('click', resetGame);
 
+function check() {
+
+}
+
 function checkCorrectBall(e) {
   const bgColor = 'background-color';
   const checkClickedElement = window.getComputedStyle(e.target).getPropertyValue(bgColor);
   const checkRightColor = colorToGuess.innerText;
   if (checkClickedElement === checkRightColor) {
-    answerText.innerText = 'Acertou!';
     counter += 3;
     score.innerText = counter;
+    if (counter >= counterError) {
+      answerText.innerText = 'Acertou! Ta indo bem!';
+    }
+    if (counter < counterError) {
+      answerText.innerText = 'Acertou! Ainda dá para passar dos erros!';
+    }
+    addBallsColor();
+    sortColor();
   } else if (checkClickedElement !== checkRightColor) {
     answerText.innerText = 'Errou! Tente novamente!';
     counterError += 1;
