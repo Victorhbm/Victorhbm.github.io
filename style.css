@@ -2,6 +2,15 @@ body {
 	background-color: #F3DFBF;
 }
 
+a {
+	color: rgb(4, 4, 126);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(19, 19, 221);
+}
+
 .nome {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
