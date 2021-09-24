@@ -2,7 +2,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEFEF;
 }
 
 /* Header */
@@ -39,24 +48,91 @@
 
 .buttons {
   background-color: rgb(78, 43, 131);
+  color: white;
   padding: 10px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.buttons:hover {
+  opacity: 0.8;
+}
+
+#button-form {
+  width: 100px;
 }
 
 /* Main */
 main {
   display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+aside {
+  width: 40%;
+  margin-top: 20px;
+}
+
+main .inputs {
+  padding: 15px;
+  width: 300px;
+}
+
+#form-container {
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.inputs-container {
+  margin-bottom: 20px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  font-size: 20px;
+}
+
+#evaluation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#label-casa {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#house {
+  width: 240px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.label-title {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#textarea {
+  display: block;
+  width: 600px;
+  height: 120px;
 }
 
 #input-nome-container {

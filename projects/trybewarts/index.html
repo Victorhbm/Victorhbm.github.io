@@ -27,16 +27,17 @@
   </header>
 
   <main>
-    <section>
+    <section id="form-container">
       <form action="" id="evaluation-form">
-        <div id="input-nome-container">
-          <input type="text" name="Nome" id="input-name" placeholder="Nome" required>
-          <input type="text" name="Sobrenome" id="input-lastname" placeholder="Sobrenome" required>
+        <h2>Formulário de Avaliação</h2>
+        <div id="input-nome-container" class="inputs-container">
+          <input type="text" name="Nome" id="input-name" class="inputs" placeholder="Nome" required>
+          <input type="text" name="Sobrenome" id="input-lastname" class="inputs" placeholder="Sobrenome" required>
         </div>
 
-        <div id="input-email-container">
-          <input type="email" name="Email" id="input-email" placeholder="Email" required>
-          <label for="house">Casa:</label>
+        <div id="input-email-container" class="inputs-container">
+          <input type="email" name="Email" id="input-email" class="inputs" placeholder="Email" required>
+          <label for="house" id="label-casa">Casa:</label>
           <select name="house" id="house" required>
             <option id="" value="">Selecione</option>
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -46,8 +47,8 @@
           </select>
         </div>
 
-        <div id="input-family-container">
-          <label for="family" id="label-family">Qual sua família?</label>
+        <div id="input-family-container" class="inputs-container">
+          <label for="family" id="label-family" class="label-title">Qual sua família?</label>
             <label for="family-frontend" class="input-family">
               <input type="radio" name="family" value="Frontend" id="family-frontend">
               Frontend
@@ -63,8 +64,8 @@
           </label>
         </div>
 
-        <div id="input-conteudo-container">
-          <label for="" id="label-content">
+        <div id="input-conteudo-container" class="inputs-container">
+          <label for="" id="label-content" class="label-title">
             Qual conteúdo você está com mais vontade de aprender?
           </label>
           <label for="hofs">
@@ -93,52 +94,52 @@
           </label>
         </div>
 
-        <div id="input-avaliacao-container">
-          <label id="label-rate"> Como você avalia a Trybewarts?</label>
+        <div id="input-avaliacao-container" class="inputs-container">
+          <label id="label-rate" class="label-title"> Como você avalia a Trybewarts?</label>
           <label for="numeroUm">
-            <input type="checkbox" value="1" name="rate" id="numeroUm">
+            <input type="radio" value="1" name="rate" id="numeroUm">
             1</label>
             <label for="numeroDois">
-            <input type="checkbox" value="2" name="rate" id="numeroDois">
+            <input type="radio" value="2" name="rate" id="numeroDois">
             2</label>
             <label for="numeroTres">
-            <input type="checkbox" value="3" name="rate" id="numeroTres">
+            <input type="radio" value="3" name="rate" id="numeroTres">
             3</label>
             <label for="numeroQuatro">
-            <input type="checkbox" value="4" name="rate" id="numeroQuatro">
+            <input type="radio" value="4" name="rate" id="numeroQuatro">
             4</label>
             <label for="numeroCinco">
-            <input type="checkbox" value="5" name="rate" id="numeCinco">
+            <input type="radio" value="5" name="rate" id="numeroCinco">
             5</label>
             <label for="numeroSeis">
-            <input type="checkbox" value="6" name="rate" id="numeroSeis">
+            <input type="radio" value="6" name="rate" id="numeroSeis">
             6</label>
             <label for="numeroSete">
-            <input type="checkbox" value="7" name="rate" id="numeroSete">
+            <input type="radio" value="7" name="rate" id="numeroSete">
             7</label>
             <label for="numeroOito">
-            <input type="checkbox" value="8" name="rate" id="numeroOito">
+            <input type="radio" value="8" name="rate" id="numeroOito">
             8</label>
             <label for="numeroNove">
-            <input type="checkbox" value="9" name="rate" id="numeroNove">
+            <input type="radio" value="9" name="rate" id="numeroNove">
             9</label>
             <label for="numeroDez">
-            <input type="checkbox" value="10" name="rate" id="numeroDez">
+            <input type="radio" value="10" name="rate" id="numeroDez">
             10</label>
         </div>
 
-        <div id="input-comentario-container">
-          <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <div id="input-comentario-container" class="inputs-container">
+          <label for="textarea" class="textarea" class="label-title">Deixe seu comentário:</label>
           <textarea name="textarea" id="textarea" maxlength="500"></textarea>
           <p>Caracteres restantes: <span id="counter">500</span></p>
         </div>
 
-        <div id="input-agreement-container">
+        <div id="input-agreement-container" class="inputs-container">
           <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement" name="agreement">
         </div>
 
-        <div id="input-submit-container">
+        <div id="input-submit-container" class="inputs-container">
           <button type="submit" id="submit-btn">Enviar</button>
         </div>
       </form>
