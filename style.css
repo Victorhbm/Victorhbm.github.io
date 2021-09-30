@@ -34,10 +34,19 @@ ul, p {
 
 /* Header */
 #container {
-	height: 100vh;
+	height: 950px;
 }
 
 #header {
+	background-color: #1F252E;
+	color: #F2F2F2;
+}
+
+#header ul li {
+	color: #F2F2F2;
+}
+
+#header-container {
 	display: flex;
 	justify-content: space-between;
 	max-width: 960px;
@@ -49,6 +58,7 @@ ul, p {
 #img-container img {
 	padding: 10px;
 	box-sizing: content-box;
+	filter: invert(100%);
 }
 
 #img-container img:hover {
@@ -70,7 +80,7 @@ ul, p {
 }
 
 #links-nav a {
-	color: #0D0D0D;
+	color: #F2F2F2;
 	padding: 5px 5px;
 	text-decoration: none;
 	font-size: 18px;
@@ -78,7 +88,7 @@ ul, p {
 }
 
 #links-nav a:hover {
-	border-bottom: 2px solid #1F252E;
+	border-bottom: 2px solid #F2F2F2;
 }
 
 /* Introdução */ 
@@ -135,11 +145,16 @@ ul, p {
 }
 
 /* Tecnologias */
+#tecnologias {
+	background-color: #1F252E;
+	color: #F2F2F2;
+	padding: 100px ;
+}
+
 #tecnologias-container {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 5px 20px;
-	margin-bottom: 80px;
 }
 
 #tecnologias-items-container {
@@ -159,6 +174,7 @@ ul, p {
 	margin: 0 auto;
 	padding: 5px 20px;
 	margin-bottom: 80px;
+	margin-top: 80px;
 }
 
 #projetos-items-container {
@@ -202,4 +218,66 @@ ul, p {
 
 .projetos-btn:hover {
 	opacity: 0.8;
+}
+
+/* Footer */
+footer {
+	background-color: #1F252E;
+	color: #F2F2F2;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Responsivo tablet*/
+@media screen and (max-width: 600px) {
+	/* Header */
+	#header-container {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	#links-nav {
+		display: none;
+	}
+
+	/* Introdução */
+	#container {
+		height: 600px;
+	}
+
+	#introducao-container {
+		height: 500px;
+		max-width: 960px;
+		margin: 20px auto;
+		padding: 0px 10px;
+	}
+
+	#icons-container {
+		height: 100px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.icons-content {
+		width: 50%;
+	}
+
+	#introducao-container h1 {
+		font-size: 22px;
+	}
+
+	#introducao-container h2 {
+		font-size: 18px;
+	}
+
+	#paragraph-container {
+		font-size: 18px;
+	}
+
+	#icons-container .fab {
+		font-size: 20px;
+	}
+
+	/*  */
 }
