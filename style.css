@@ -74,7 +74,7 @@ ul, p {
 }
 
 #links-nav {
-	width: 350px;
+	width: 220px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -148,7 +148,7 @@ ul, p {
 #tecnologias {
 	background-color: #1F252E;
 	color: #F2F2F2;
-	padding: 100px ;
+	padding: 100px 10px;
 }
 
 #tecnologias-container {
@@ -228,7 +228,7 @@ footer {
 	padding: 20px;
 }
 
-/* Responsivo tablet*/
+/* Responsivo Celular*/
 @media screen and (max-width: 600px) {
 	/* Header */
 	#header-container {
@@ -264,11 +264,11 @@ footer {
 	}
 
 	#introducao-container h1 {
-		font-size: 22px;
+		font-size: 24px;
 	}
 
 	#introducao-container h2 {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	#paragraph-container {
@@ -279,5 +279,82 @@ footer {
 		font-size: 20px;
 	}
 
-	/*  */
+	/* Tecnologias */
+	#tecnologias {
+		padding: 60px 10px;
+	}
+
+	#tecnologias-items-container {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.tecnologias-items-content {
+		margin-bottom: 40px;
+	}
+
+	.section-subtitle {
+		font-size: 24px;
+	}
+
+	#tecnologias-container h3 {
+		font-size: 20px;
+	}
+
+	#tecnologias-container ul li {
+		font-size: 16px;
+	}
+
+	/* Projetos */
+	#projetos-container {
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+
+	#projetos-items-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.projetos-items-content {
+		padding: 20px;
+		margin-right: 0px;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.projetos-items-content {
+		font-size: 16px;
+	}
+
+	.projetos-items-content h3 {
+		font-size: 20px;
+	}
+
+	/* Footer */
+	footer {
+		font-size: 14px;
+		text-align: center;
+		padding: 8px;
+	}
+}
+
+/* Responsivo Tela pequena */
+@media screen and (max-width: 370px) {
+	#container {
+		height: auto;
+	}
+
+	#introducao-container {
+		height: 600px;
+		width: 100%;
+		margin: 0;
+		padding: 10px;
+	}
+
+	#icons-container {
+		width: 100%;
+	}
 }
